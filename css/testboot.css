@@ -1,0 +1,208 @@
+:root{
+    --main-color:#33d1cc;
+    --sec-dark-color:#0e2440da;
+    --red-color:#ff3150;
+    --section-color:#eff7fa;
+    
+}
+body{
+font-family: 'Roboto', sans-serif;
+}
+/* .main-btn{
+    background-color:var(--red-color);
+    color: var(--main-color);
+} */
+/* Start navbar */
+.main-title::after{
+    content: " ";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.navbar{
+    background-color: #0e2440da;
+}
+.navbar .navbar-brand img{
+    max-width: 70px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:focus,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--main-color);
+}
+.navbar .search svg{
+    color: var(--main-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+border-color: var(--main-color);
+}
+/* End Navbar */
+/* Start Landing */
+.landing{
+background-color: var( --sec-dark-color);
+min-height: calc(100vh - 82px);
+}
+/* End Landing */
+/* Start Feature */
+.main-title svg{
+    font-size: 50px;
+    color: var(--main-color);
+    padding: 10px;
+}
+.icon-holder{
+    height: 200px;
+}
+.icon-holder svg{
+    left:50%;
+    transform: translateX(-50%);
+}
+.icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.icon-holder .icon{
+    color: var(--main-color);
+}
+.feat h3{
+    color: var(--sec-dark-color);
+}
+/* End Feature */
+
+/* Start our-Work */
+.ourwork{
+    background-color: var(--section-color);
+}
+.ourwork ul .active{
+    color: gold;
+    background-color: var(--red-color);
+}
+.ourwork ul li{
+    padding: 0.5rem 1rem ;
+    cursor: pointer;
+}
+.ourwork ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.ourwork .box{
+    overflow: hidden;
+}
+.ourwork .box::before{
+    content:attr(data-work);
+    position: absolute;
+    background-color:#33d1cc8b;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: translatex(-100%);
+}
+.ourwork .box:hover::before{
+    transform: translateX(0);
+}
+.ourwork a{
+    width: fit-content;
+    margin: auto;
+}
+/* End our-Work */
+/* Start Staf */
+.stuf .descr{
+    max-width: 400px;
+}
+.stuf .image img{
+    max-width: 350px;
+}
+/* End Staf */
+/* Start The Me Team */
+.me-team{
+    background-color: var(--section-color);
+}
+.me-team p{
+    max-width: 500px;
+}
+.me-team .box h5{
+    color: var(--section-color);
+    background-color: var(--main-color);
+}
+.me-team .box:hover {
+    transition: 1s;
+transform:  translatey(100px);
+/* transform: rotate(5deg); */
+}
+/* End The Me Team */
+/* Start Project */
+.project{
+    background-color: var(--sec-dark-color);
+    height: 400px;
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe input[type="email"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="email"]:focus{
+outline: none;
+}
+.subscribe input[type="button"]{
+    background-color: var(--sec-dark-color);
+    color: white;
+    }
+.subscribe input[type="button"]:hover{
+    background-color: var(--red-color);
+    }
+/* End Subscribe */
+/* Start Footer */
+.footer{
+    background-color: var(--sec-dark-color);
+}
+.footer .info img{
+    width: 100px;
+}
+.footer .info div > span{
+    color: var(--main-color);
+}
+.footer .facebook{
+background-color:#1877f2;
+}
+.footer .whatsapp{
+    background-color: #128c7e;
+}
+.footer .twitter{
+    background-color:#1da1f2 ;
+}
+.footer .linkedin{
+    background-color:#0077b5 ;
+}
+@media(max-width:767px){
+    .footer .links{
+        display: none;
+    }
+    .footer .contact-Us1{
+        padding: 1px 1px;
+    }
+}
+/* End Footer */
